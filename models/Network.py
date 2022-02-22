@@ -29,8 +29,7 @@ def cosine_decay(max_epochs, max_lr, min_lr=1e-5, warmup=False):
     return decay
 
 class Network():
-    def __init__(self, input_shape, num_classes=None, weights=None, save_weights_path=None, dataset_name='default', lr=1e-3) -> None:
-        self.input_shape = input_shape
+    def __init__(self, num_classes=None, weights=None, save_weights_path=None, dataset_name='default', lr=1e-3) -> None:
         self.num_classes = num_classes
         self.weights = weights
         self.save_weights_path = save_weights_path

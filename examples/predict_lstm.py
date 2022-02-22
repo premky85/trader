@@ -5,7 +5,7 @@ from model_loader import *
 from sklearn.preprocessing import scale
 
 
-path = '/share/Disk_2/Projects/trader/data/'
+path = 'data/'
 dataset = 'binance-1h'
 
 p = path + 'Binance_BTCUSDT_1h.csv'
@@ -13,7 +13,7 @@ p = path + 'Binance_BTCUSDT_1h.csv'
 window_size = 80
 predict_size = 20
 
-model = LSTMNet((window_size, 1), 1, weights='/share/Disk_2/Projects/trader/weights/binance-1h/LSTMNet-18_08_2021-21:04:04/LSTMNet_binance-1h_0078_mae_0.0337.h5')
+model = LSTMNet((window_size, 1), 1, weights='weights/binance-1h/LSTMNet-18_08_2021-21:04:04/LSTMNet_binance-1h_0078_mae_0.0337.h5')
 lstmnet = model.get_model()
 
 dataframe = pd.read_csv(p)
