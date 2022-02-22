@@ -1,6 +1,6 @@
 from models.AgentNet import AgentNetActor, AgentNetCritic
 from utils.helpers import Buffer, OUActionNoise
-from environments.environment_continuous import TraderEnv
+from environments.environment import TraderEnv
 from environments.dataloaders.binance_dataloader import BinanceDataLoader
 import tensorflow as tf
 import numpy as np

@@ -38,7 +38,6 @@ class TraderEnv(gym.Env):
 
         old_net = self.balance_0 + data['price_old'] * self.balance_1
 
-        
         # Warmup
         # if self.i < 12000:
         #     reward_factor = 0
